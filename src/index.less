@@ -1,0 +1,114 @@
+@import "~antd/dist/antd.less";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Raleway", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  font-weight: 700 !important;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.container {
+  margin: 0px auto;
+  position: relative;
+  max-width: 1280px;
+  width: 100%;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+.site-layout {
+  padding: 0 20px;
+  margin-top: 64px;
+  min-height: 100vh;
+}
+
+.search-input {
+  padding: 14px;
+  border: unset;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.movie-card {
+  width: 100%;
+  background-color: unset;
+  cursor: pointer;
+}
+
+.movie-poster {
+  border-radius: 10px !important;
+  max-width: 240px;
+}
+
+.movie-type {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+
+.ant-card-small > .ant-card-body {
+  padding: 8px 4px 0;
+}
+
+.ant-descriptions-item-label {
+  font-weight: 700;
+}
+
+.movie-info {
+  font-size: 14px;
+  font-weight: 400;
+  & *:not(:last-child)::after {
+    content: "|";
+    margin: 0 4px;
+    color: rgba(0, 0, 0, 0.12);
+  }
+}
+
+.movie-detail {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.movie-rating {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  & > * {
+    margin-right: 8px;
+  }
+}
+
+.rating {
+  font-weight: 700;
+  font-size: 21px;
+  color: #1a1a1a;
+}
+
+.fs-small {
+  font-size: 12px;
+}
+
+.fs-xsmall {
+  font-size: 9px;
+}
+
+.cursor-zoom-in {
+  cursor: zoom-in;
+}

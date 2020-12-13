@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MainLayout from "./layouts/main";
+import Home from "./pages/home";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import MovieDetail from "./pages/movieDetail";
+import PreviewPoster from "./pages/movieDetail/previewPoster";
+
+export interface MovieDetailParamTypes {
+  id: string;
+  search: string;
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainLayout>
+      <Router>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/:id/:search">
+          <MovieDetail />
+        </Route>
+        <Route path="/:id/:search/preview">
+          <PreviewPoster />
+        </Route>
+      </Router>
+    </MainLayout>
   );
 }
 
