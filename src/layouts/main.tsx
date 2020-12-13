@@ -1,12 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { Layout, Typography } from "antd";
-import SearchInput from "../components/SearchInput";
-import { useDispatch } from "react-redux";
-import { movieActions, movieActionsLoading } from "../actions/movieActions";
-import DelayHandling from "../utils/delayHandling";
+import React from "react";
+import { Layout } from "antd";
 
 const { Content } = Layout;
-const { Title } = Typography;
 interface MainLayoutProps {
   children: React.ReactNode;
 }
