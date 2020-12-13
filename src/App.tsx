@@ -19,10 +19,10 @@ function App() {
             <Home />
           </Route>
           <Route path="/:id/:search">
+            <Route path="/:id/:search/preview">
+              <PreviewPoster />
+            </Route>
             <MovieDetail />
-          </Route>
-          <Route path="/:id/:search/preview">
-            <PreviewPoster />
           </Route>
           <Redirect to="/" />
         </Switch>
