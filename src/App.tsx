@@ -12,8 +12,8 @@ export interface MovieDetailParamTypes {
 
 function App() {
   return (
-    <MainLayout>
-      <Router>
+    <Router>
+      <MainLayout>
         <Route path="/" exact>
           <Home />
         </Route>
@@ -23,8 +23,8 @@ function App() {
         <Route path="/:id/:search/preview">
           <PreviewPoster />
         </Route>
-      </Router>
-    </MainLayout>
+      </MainLayout>
+    </Router>
   );
 }
 
