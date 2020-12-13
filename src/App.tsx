@@ -1,7 +1,7 @@
 import React from "react";
 import MainLayout from "./layouts/main";
 import Home from "./pages/home";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import MovieDetail from "./pages/movieDetail";
 import PreviewPoster from "./pages/movieDetail/previewPoster";
 
@@ -12,7 +12,7 @@ export interface MovieDetailParamTypes {
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename="/">
       <MainLayout>
         <Route path="/" exact>
           <Home />
@@ -24,7 +24,7 @@ function App() {
           <PreviewPoster />
         </Route>
       </MainLayout>
-    </Router>
+    </HashRouter>
   );
 }
 
