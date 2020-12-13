@@ -1,7 +1,7 @@
 import React from "react";
 import MainLayout from "./layouts/main";
 import Home from "./pages/home";
-import { HashRouter, Route } from "react-router-dom";
+import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import MovieDetail from "./pages/movieDetail";
 import PreviewPoster from "./pages/movieDetail/previewPoster";
 
@@ -14,15 +14,18 @@ function App() {
   return (
     <HashRouter basename="/">
       <MainLayout>
-        <Route path="/" exact>
-          <Home />
-        </Route>
-        <Route path="/:id/:search">
-          <MovieDetail />
-        </Route>
-        <Route path="/:id/:search/preview">
-          <PreviewPoster />
-        </Route>
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/:id/:search">
+            <MovieDetail />
+          </Route>
+          <Route path="/:id/:search/preview">
+            <PreviewPoster />
+          </Route>
+          <Redirect to="/" />
+        </Switch>
       </MainLayout>
     </HashRouter>
   );

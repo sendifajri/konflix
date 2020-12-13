@@ -20,12 +20,16 @@ const HomeHeader = () => {
   DelayHandling({
     loadingAction: () => dispatch(movieActionsLoading()),
     action: () => {
-      if (search !== undefined) {
-        history.replace(`?s=${search}`);
-      }
       dispatch(movieActions({ search: search || "batman", page: 1 }));
     },
   });
+
+  const onSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (search !== undefined) {
+      history.replace(`?s=${search}`);
+    }
+    setSearch(e.target.value);
+  };
 
   return (
     <>
@@ -33,9 +37,7 @@ const HomeHeader = () => {
       <SearchInput
         value={search}
         placeholder="Ex 'Batman'"
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-          setSearch(e.target.value)
-        }
+        onChange={onSearch}
       />
     </>
   );
