@@ -25,10 +25,11 @@ const HomeHeader = () => {
   });
 
   const onSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value
     if (search !== undefined) {
-      history.replace(`?s=${search}`);
+      history.replace(`?s=${value}`);
     }
-    setSearch(e.target.value);
+    setSearch(value);
   };
 
   return (
