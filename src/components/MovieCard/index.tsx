@@ -36,7 +36,12 @@ const MovieCard = (props: MovieCardProps) => {
       <Text type="secondary" strong data-testid="movie-year">
         {props.Year}
       </Text>
-      <Paragraph ellipsis={{ rows: 2 }} strong style={{ minHeight: 44 }} data-testid="movie-title">
+      <Paragraph
+        ellipsis={{ rows: 2 }}
+        strong
+        style={{ minHeight: 44 }}
+        data-testid="movie-title"
+      >
         {props.Title}
       </Paragraph>
       <Tag className="movie-type" color="#108ee9" data-testid="movie-type">

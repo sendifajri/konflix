@@ -16,7 +16,9 @@ const MovieRating = ({ rating, votes }: RateProps) => {
       <div>
         <div>
           <div>
-            <span className="rating" data-testid="movie-rating">{rating}</span>
+            <span className="rating" data-testid="movie-rating">
+              {rating}
+            </span>
             <span className="fs-xsmall">/10</span>
           </div>
         </div>

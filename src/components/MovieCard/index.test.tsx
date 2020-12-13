@@ -1,4 +1,3 @@
-
 import React from "react";
 import { render } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
@@ -22,20 +21,28 @@ afterEach(() => {
 it("MovieCard should return title, year, type and poster's url", () => {
   act(() => {
     render(
-      <MovieCard Poster="http://batman.png/" Title="Batman" Type="Movie" Year="1998" imdbID="12332db" search="batman"/>,
+      <MovieCard
+        Poster="http://batman.png/"
+        Title="Batman"
+        Type="Movie"
+        Year="1998"
+        imdbID="12332db"
+        search="batman"
+      />,
       container
-    )
-  })
+    );
+  });
 
-  const movieTitle = document.querySelector("[data-testid=movie-title]")
+  const movieTitle = document.querySelector("[data-testid=movie-title]");
   expect(movieTitle?.textContent).toBe("Batman");
 
-  const movieYear = document.querySelector("[data-testid=movie-year]")
+  const movieYear = document.querySelector("[data-testid=movie-year]");
   expect(movieYear?.textContent).toBe("1998");
 
-    const movieType = document.querySelector("[data-testid=movie-type]")
+  const movieType = document.querySelector("[data-testid=movie-type]");
   expect(movieType?.textContent).toBe("Movie");
 
-  const moviePoster = document.querySelector("[data-testid=movie-poster]")?.childNodes[0] as HTMLImageElement
+  const moviePoster = document.querySelector("[data-testid=movie-poster]")
+    ?.childNodes[0] as HTMLImageElement;
   expect(moviePoster?.src).toBe("http://batman.png/");
-})
+});

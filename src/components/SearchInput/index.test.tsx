@@ -23,15 +23,17 @@ afterEach(() => {
 it("SearchInput onChange should be trigger and value must be render", () => {
   const onChange = jest.fn();
   act(() => {
-    render(<SearchInput value="Batman" onChange={onChange} />, container)
-  })
+    render(<SearchInput value="Batman" onChange={onChange} />, container);
+  });
 
-  const searchInput = document.querySelector("[data-testid=search-input]") as HTMLInputElement
-  expect(searchInput?.value).toBe("Batman")
+  const searchInput = document.querySelector(
+    "[data-testid=search-input]"
+  ) as HTMLInputElement;
+  expect(searchInput?.value).toBe("Batman");
 
   act(() => {
-    fireEvent.change(searchInput, {target: {value: "Spiderman"}})
-  })
+    fireEvent.change(searchInput, { target: { value: "Spiderman" } });
+  });
 
   expect(onChange).toHaveBeenCalledTimes(1);
-})
+});

@@ -22,15 +22,12 @@ afterEach(() => {
 
 it("MovieRating should return rating and votes", () => {
   act(() => {
-    render(<MovieRating votes="16,000" rating="8.2" />, container)
-  })
+    render(<MovieRating votes="16,000" rating="8.2" />, container);
+  });
 
-  const movieRating = document.querySelector('[data-testid=movie-rating]')
-  expect(movieRating?.textContent).toBe("8.2")
+  const movieRating = document.querySelector("[data-testid=movie-rating]");
+  expect(movieRating?.textContent).toBe("8.2");
 
-
-  const movieVotes = document.querySelector('[data-testid=movie-votes]')
-  expect(movieVotes?.textContent).toBe("16,000")
-
-
-})
+  const movieVotes = document.querySelector("[data-testid=movie-votes]");
+  expect(movieVotes?.textContent).toBe("16,000");
+});
