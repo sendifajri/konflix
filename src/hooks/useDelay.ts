@@ -1,12 +1,12 @@
 import { useEffect } from "react";
-import { useFirstUpdate } from "../hooks/useFirstUpdate";
+import { useFirstUpdate } from "./useFirstUpdate";
 
 interface IDelayHandling {
   loadingAction: () => void;
   action: () => void;
   delay?: number;
 }
-export default function DelayHandling({
+export default function useDelay({
   loadingAction,
   action,
   delay,

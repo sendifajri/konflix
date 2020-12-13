@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Typography } from "antd";
 import { useDispatch } from "react-redux";
 import SearchInput from "../../components/SearchInput";
-import DelayHandling from "../../utils/delayHandling";
+import useDelay from "../../hooks/useDelay";
 import { movieActions, movieActionsLoading } from "../../actions/movieActions";
 import { useHistory } from "react-router-dom";
 import { useQuery } from "../../hooks/useQuery";
@@ -17,7 +17,7 @@ const HomeHeader = () => {
     query.get("s") || undefined
   );
 
-  DelayHandling({
+  useDelay({
     loadingAction: () => dispatch(movieActionsLoading()),
     action: () => {
       dispatch(movieActions({ search: search || "batman", page: 1 }));
