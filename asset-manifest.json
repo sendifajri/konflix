@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/konflix/static/css/main.591f4b63.chunk.css",
-    "main.js": "/konflix/static/js/main.66182e8c.chunk.js",
-    "main.js.map": "/konflix/static/js/main.66182e8c.chunk.js.map",
-    "runtime-main.js": "/konflix/static/js/runtime-main.f7c60ddd.js",
-    "runtime-main.js.map": "/konflix/static/js/runtime-main.f7c60ddd.js.map",
-    "static/js/2.8ea3503a.chunk.js": "/konflix/static/js/2.8ea3503a.chunk.js",
-    "static/js/2.8ea3503a.chunk.js.map": "/konflix/static/js/2.8ea3503a.chunk.js.map",
-    "static/js/3.698bcf62.chunk.js": "/konflix/static/js/3.698bcf62.chunk.js",
-    "static/js/3.698bcf62.chunk.js.map": "/konflix/static/js/3.698bcf62.chunk.js.map",
+    "main.js": "/konflix/static/js/main.870273b4.chunk.js",
+    "main.js.map": "/konflix/static/js/main.870273b4.chunk.js.map",
+    "runtime-main.js": "/konflix/static/js/runtime-main.cc0c161e.js",
+    "runtime-main.js.map": "/konflix/static/js/runtime-main.cc0c161e.js.map",
+    "static/js/2.e847fa4a.chunk.js": "/konflix/static/js/2.e847fa4a.chunk.js",
+    "static/js/2.e847fa4a.chunk.js.map": "/konflix/static/js/2.e847fa4a.chunk.js.map",
+    "static/js/3.d0c77c2e.chunk.js": "/konflix/static/js/3.d0c77c2e.chunk.js",
+    "static/js/3.d0c77c2e.chunk.js.map": "/konflix/static/js/3.d0c77c2e.chunk.js.map",
     "index.html": "/konflix/index.html",
     "static/css/main.591f4b63.chunk.css.map": "/konflix/static/css/main.591f4b63.chunk.css.map",
-    "static/js/2.8ea3503a.chunk.js.LICENSE.txt": "/konflix/static/js/2.8ea3503a.chunk.js.LICENSE.txt"
+    "static/js/2.e847fa4a.chunk.js.LICENSE.txt": "/konflix/static/js/2.e847fa4a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f7c60ddd.js",
-    "static/js/2.8ea3503a.chunk.js",
+    "static/js/runtime-main.cc0c161e.js",
+    "static/js/2.e847fa4a.chunk.js",
     "static/css/main.591f4b63.chunk.css",
-    "static/js/main.66182e8c.chunk.js"
+    "static/js/main.870273b4.chunk.js"
   ]
 }
